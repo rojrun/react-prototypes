@@ -1,12 +1,12 @@
 import React from 'react';
 import './scrapbook.css';
-import kenny from './images/kenny.jpg';
+import imageData from './images_data';
+import ScrapbookImage from './scrapbook_images';
 
 const Scrapbook = () => (
     <div className="scrapbook-container">
-        <img src={kenny}/>
+        <ScrapbookImage about={imageData[0]}/>
     </div>
-
 );
 
 export default Scrapbook;
