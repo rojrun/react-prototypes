@@ -3,6 +3,6 @@ import React from 'react';
 
 export default props => {
     console.log('scrapbook image props:', props);
-
-    return <div>Image goes here</div>
+    const {src, style}= props.about;
+    return <img style={style} className="scrapbook-image" src={src}/>
 }
